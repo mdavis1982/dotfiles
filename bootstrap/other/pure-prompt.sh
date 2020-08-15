@@ -4,7 +4,7 @@ printf "Installing Pure Prompt..."
 
 # Install
 # ------------------------------------------------------------------------------
-npm install --global pure-prompt
+npm install --global pure-prompt &> /dev/null
 
 # Success message
 # ------------------------------------------------------------------------------
