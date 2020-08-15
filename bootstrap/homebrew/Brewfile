@@ -1,0 +1,18 @@
+# Taps
+tap "homebrew/core"
+tap "homebrew/cask-fonts"
+tap "homebrew/bundle"
+
+# Homebrew Cask Fonts
+cask "font-jetbrains-mono"
+
+# Homebrew Formulae
+# -- Development Stuff
+brew "node"
+
+# Homebrew Cask Formulae
+cask "1password"
+
+# Mac App Store Installations
+mas "Pages", id: 409201541
+mas "Things 3", id: 904280696

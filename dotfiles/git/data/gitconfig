@@ -1,0 +1,29 @@
+[core]
+    # Use a custom .gitignore
+    excludesfile = ~/.gitignore
+
+    # Make `git rebase` safer on macOS
+    # - http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/
+    trustctime = false
+
+    # Prevent showing files whose names contain non-ASCII symbols as unversioned
+    # - http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+    precomposeunicode = true
+[help]
+    # When typing an incorrect command, try to guess the command you meant
+    # and execute it after a 3 second delay
+    autocorrect = 30
+[push]
+    # Use the new branch pushing behaviour
+    default = simple
+    followTags = true
+[apply]
+    # Detect whitespace errors when applying a patch
+    whitespace = fix
+[diff]
+    # Detect renames as well as copies
+    renames = copies
+[alias]
+    br = branch
+    co = checkout
+    st = status
