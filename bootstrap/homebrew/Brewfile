@@ -1,18 +1,36 @@
 # Taps
 tap "homebrew/core"
+tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/services"
 tap "homebrew/bundle"
 
 # Homebrew Cask Fonts
 cask "font-jetbrains-mono"
+cask "font-inter"
 
 # Homebrew Formulae
 # -- Development Stuff
 brew "node"
+brew "php"
+brew "mysql", restart_service: true
+brew "composer"
+brew "php-cs-fixer"
 
 # Homebrew Cask Formulae
 cask "1password"
+cask "alfred"
+cask "google-chrome"
+cask "omnigraffle"
+cask "qlab"
+cask "sketch"
+cask "slack"
+cask "spotify"
+cask "tableplus"
+cask "visual-studio-code"
 
 # Mac App Store Installations
 mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
+mas "Keynote", id: 409183694
 mas "Things 3", id: 904280696

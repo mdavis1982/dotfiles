@@ -15,6 +15,8 @@ BASE_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # ------------------------------------------------------------------------------
 source $BASE_DIRECTORY/command-line-tools/check.sh
 source $BASE_DIRECTORY/homebrew/install.sh
+source $BASE_DIRECTORY/oh-my-zsh/install.sh
 
 source $BASE_DIRECTORY/other/create-folders.sh
 source $BASE_DIRECTORY/other/pure-prompt.sh
+source $BASE_DIRECTORY/other/laravel.sh
