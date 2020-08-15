@@ -16,6 +16,5 @@ BASE_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $BASE_DIRECTORY/command-line-tools/check.sh
 source $BASE_DIRECTORY/homebrew/install.sh
 
-# Install stuff from the "Other" directory
-# -------------------------------------------------------------------------------
+source $BASE_DIRECTORY/other/create-folders.sh
 source $BASE_DIRECTORY/other/pure-prompt.sh
