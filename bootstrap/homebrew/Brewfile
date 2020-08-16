@@ -5,26 +5,31 @@ tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "homebrew/bundle"
 
-# Homebrew Cask Fonts
+# Fonts
 cask "font-jetbrains-mono"
 cask "font-inter"
 
-# Homebrew Formulae
-# -- Development Stuff
-brew "node"
+# Binaries
+brew "ffmpeg"
+brew "git"
+brew "mas"
+
+# Development
 brew "php"
-brew "mysql", restart_service: true
+brew "mysql"
 brew "composer"
 brew "php-cs-fixer"
+brew "node"
+brew "yarn"
 
-# -- Quicklook
+# Quicklook
 cask 'qlcolorcode'
 cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 
-# Homebrew Cask Formulae
+# Apps
 cask "1password"
 cask "alfred"
 cask "google-chrome"
@@ -36,7 +41,7 @@ cask "spotify"
 cask "tableplus"
 cask "visual-studio-code"
 
-# Mac App Store Installations
+# Mac App Store
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694
