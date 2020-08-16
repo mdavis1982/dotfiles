@@ -17,6 +17,13 @@ brew "mysql", restart_service: true
 brew "composer"
 brew "php-cs-fixer"
 
+# -- Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'quicklook-csv'
+cask 'quicklook-json'
+
 # Homebrew Cask Formulae
 cask "1password"
 cask "alfred"
