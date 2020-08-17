@@ -21,6 +21,7 @@ source $BASE_DIRECTORY/bootstrap/homebrew/install.sh
 source $BASE_DIRECTORY/bootstrap/oh-my-zsh/install.sh
 
 source $BASE_DIRECTORY/bootstrap/laravel/install.sh
+source $BASE_DIRECTORY/bootstrap/filesystem/install.sh
 
 # Exit Cleanly
 # ------------------------------------------------------------------------------
