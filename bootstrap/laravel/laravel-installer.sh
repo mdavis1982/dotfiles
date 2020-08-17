@@ -11,7 +11,7 @@ if ! command -v laravel &> /dev/null; then
         [yY])
             printf "Installing Laravel installer... "
             composer global require laravel/installer --quiet
-            printf "\033[32mDone\033[0m"
+            printf "\033[32mDone\033[0m\n"
             ;;
         *)
             printf "Laravel installer not installed.\n"
