@@ -16,11 +16,17 @@ BASE_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Run each step in turn
 # ------------------------------------------------------------------------------
+printf "\033[35;4mPrerequisites\033[0m\n"
 source $BASE_DIRECTORY/bootstrap/command-line-tools/check.sh
+
 source $BASE_DIRECTORY/bootstrap/homebrew/install.sh
 source $BASE_DIRECTORY/bootstrap/oh-my-zsh/install.sh
 
+source $BASE_DIRECTORY/bootstrap/git/install.sh
+
 source $BASE_DIRECTORY/bootstrap/laravel/install.sh
+source $BASE_DIRECTORY/bootstrap/php-cs-fixer/install.sh
+
 source $BASE_DIRECTORY/bootstrap/filesystem/install.sh
 
 # Exit Cleanly
