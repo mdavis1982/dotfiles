@@ -4,6 +4,8 @@
 # ------------------------------------------------------------------------------
 printf "\n\033[35;4mLaravel Tools\033[0m\n"
 
+# Check prerequisites
+# ------------------------------------------------------------------------------
 printf "Checking for composer installation... "
 if ! command -v composer &> /dev/null; then
     printf "\033[31mNot found\033[0m\n\n"
@@ -13,11 +15,11 @@ else
     printf "\033[32mInstalled\033[0m\n"
 fi
 
-# Install
+# Set the directory to the directory where the script is
 # ------------------------------------------------------------------------------
-printf "Installing Laravel Tools...\n"
-composer global require laravel/installer --quiet
-composer global require laravel/valet --quiet
+DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-valet install
-printf "\033[32mLaravel Tools Installed\033[0m\n"
+# Run each step in turn
+# ------------------------------------------------------------------------------
+source $DIRECTORY/laravel-installer.sh
+source $DIRECTORY/laravel-valet.sh

@@ -68,3 +68,7 @@ cp $DIRECTORY/data/custom/path.zsh ~/.oh-my-zsh/custom/path.zsh
 cp $DIRECTORY/data/custom/pure-prompt.zsh ~/.oh-my-zsh/custom/pure-prompt.zsh
 
 printf "\033[32mDone\033[0m\n"
+
+# Install any Oh My ZSH! extensions
+# ------------------------------------------------------------------------------
+source $DIRECTORY/pure-prompt.sh

@@ -17,6 +17,7 @@ BASE_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Run each step in turn
 # ------------------------------------------------------------------------------
 source $BASE_DIRECTORY/bootstrap/command-line-tools/check.sh
+source $BASE_DIRECTORY/bootstrap/homebrew/install.sh
 source $BASE_DIRECTORY/bootstrap/oh-my-zsh/install.sh
 
 source $BASE_DIRECTORY/bootstrap/laravel/install.sh
