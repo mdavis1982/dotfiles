@@ -56,6 +56,10 @@ esac
 brew bundle install --file=$DIRECTORY/Brewfile --no-lock
 brew cleanup
 
+# Start any brew installed services
+# ------------------------------------------------------------------------------
+brew services start mysql
+
 # Success message
 # ------------------------------------------------------------------------------
 printf "\033[32mMachine bootstrapped.\033[0m\n"
