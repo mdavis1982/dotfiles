@@ -8,7 +8,7 @@ This repository contains my personal collection of dotfiles. It also includes so
 To install the whole thing, just run `./install.sh` from the root directory. This will:
 
 - Check that the XCode Command Line Tools are installed
-- Create some directories on the filesystem and set their icons:
+- Create some directories on the filesystem:
     - `~/Developer`
     - `~/Developer/Apps`
     - `~/Developer/Packages`
