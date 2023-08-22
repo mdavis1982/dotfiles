@@ -17,6 +17,6 @@ To install the whole thing, just run `./install.sh` from the root directory. Thi
 - Install [Homebrew](https://brew.sh)
 - Install Git config files and prompt for the Git Author name and email address
 - Install [Oh My ZSH!](https://ohmyz.sh)
-- Bootstrap all of the applications, utilities and fonts listed in `bootstrap/homebrew/Brewfile`
+- Bootstrap all of the applications, utilities and fonts listed in `installers/homebrew/Brewfile`
 
 Running the `./install.sh` script multiple times will attempt to check for existing installations and won't install things for a second time. Subsequent runs will always offer to install the configuration files for the various pieces.
