@@ -1,0 +1,31 @@
+# Taps
+tap 'homebrew/bundle'
+
+# Fonts
+# -- No Fonts Yet
+
+# Binaries
+brew 'ffmpeg'
+brew 'jq'
+brew 'mas'
+
+# Development
+brew 'node'
+
+# Apps
+cask '1password'
+cask 'dbngin'
+cask 'figma'
+cask 'google-chrome'
+cask 'herd'
+cask 'phpstorm'
+cask 'screenflow'
+cask 'slack'
+cask 'spotify'
+cask 'tableplus'
+
+# Mac App Store
+mas '1Blocker', id: 1365531024
+mas 'Keynote', id: 409183694
+mas 'MindNode', id: 1289197285
+mas 'Things', id: 904280696
