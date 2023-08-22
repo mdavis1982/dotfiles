@@ -55,12 +55,14 @@ esac
 # ------------------------------------------------------------------------------
 printf "Configuring Oh My ZSH!... "
 
+rm ~/.hushlogin
 rm ~/.zshrc
 rm ~/.oh-my-zsh/custom/git.zsh
 rm ~/.oh-my-zsh/custom/laravel.zsh
 rm ~/.oh-my-zsh/custom/path.zsh
 rm ~/.oh-my-zsh/custom/themes/lick.zsh-theme
 
+cp $DIRECTORY/data/hushlogin ~/.hushlogin
 cp $DIRECTORY/data/zshrc ~/.zshrc
 cp $DIRECTORY/data/custom/git.zsh ~/.oh-my-zsh/custom/git.zsh
 cp $DIRECTORY/data/custom/laravel.zsh ~/.oh-my-zsh/custom/laravel.zsh
