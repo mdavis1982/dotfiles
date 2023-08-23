@@ -23,6 +23,11 @@ source $BASE_DIRECTORY/installers/git/install.sh
 source $BASE_DIRECTORY/installers/oh-my-zsh/install.sh
 source $BASE_DIRECTORY/installers/homebrew/install.sh
 
+# Show installed message
+# ------------------------------------------------------------------------------
+printf "\n\n\033[32;4mDone!\033[0m\n"
+printf "Machine bootstrapped successfully.\n"
+
 # Exit Cleanly
 # ------------------------------------------------------------------------------
 exit 0

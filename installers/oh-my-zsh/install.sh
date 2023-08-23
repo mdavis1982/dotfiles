@@ -28,7 +28,7 @@ if ! $INSTALLED; then
         [yY])
             printf "Installing Oh My ZSH!... "
             sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-            printf "\033[32mDone\033[0m"
+            printf "\033[32mDone\033[0m\n\n"
             ;;
         *)
             printf "Oh My ZSH not installed.\n"
@@ -55,12 +55,12 @@ esac
 # ------------------------------------------------------------------------------
 printf "Configuring Oh My ZSH!... "
 
-rm ~/.hushlogin
-rm ~/.zshrc
-rm ~/.oh-my-zsh/custom/git.zsh
-rm ~/.oh-my-zsh/custom/laravel.zsh
-rm ~/.oh-my-zsh/custom/path.zsh
-rm ~/.oh-my-zsh/custom/themes/lick.zsh-theme
+rm -f ~/.hushlogin
+rm -f ~/.zshrc
+rm -f ~/.oh-my-zsh/custom/git.zsh
+rm -f ~/.oh-my-zsh/custom/laravel.zsh
+rm -f ~/.oh-my-zsh/custom/path.zsh
+rm -f ~/.oh-my-zsh/custom/themes/lick.zsh-theme
 
 cp $DIRECTORY/data/hushlogin ~/.hushlogin
 cp $DIRECTORY/data/zshrc ~/.zshrc

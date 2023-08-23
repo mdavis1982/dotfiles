@@ -38,8 +38,8 @@ esac
 printf "Configuring Git...\n"
 
 printf "Removing any existing configuration... "
-rm ~/.gitconfig
-rm ~/.gitignore
+rm -f ~/.gitconfig
+rm -f ~/.gitignore
 printf "\033[32mDone\033[0m\n"
 
 printf "Installing new configuration... "

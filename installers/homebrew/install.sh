@@ -12,7 +12,7 @@ DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # ------------------------------------------------------------------------------
 INSTALLED=true
 printf "Checking for Homebrew installation... "
-if ! command -v brew &> /dev/null; then
+if ! command -v /opt/homebrew/bin/brew &> /dev/null; then
     printf "\033[31mNot found\033[0m\n\n"
     INSTALLED=false
 else
@@ -28,7 +28,7 @@ if ! $INSTALLED; then
         [yY])
             printf "Installing Homebrew...\n"
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-            printf "\033[32mDone\033[0m"
+            printf "\033[32mDone\033[0m\n\n"
             ;;
         *)
             printf "Homebrew not installed.\n"
