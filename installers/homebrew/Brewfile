@@ -15,6 +15,7 @@ brew 'node'
 
 # Apps
 cask '1password'
+cask 'bartender'
 cask 'dbngin'
 cask 'figma'
 cask 'google-chrome'
