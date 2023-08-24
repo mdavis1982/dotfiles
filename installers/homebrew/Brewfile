@@ -8,6 +8,7 @@ cask 'font-jetbrains-mono'
 # Binaries
 brew 'ffmpeg'
 brew 'jq'
+brew 'mackup'
 brew 'mas'
 
 # Development
