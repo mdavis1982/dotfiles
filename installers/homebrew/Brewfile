@@ -13,6 +13,7 @@ brew 'mas'
 
 # Development
 brew 'node'
+brew 'visual-studio-code'
 
 # Apps
 cask '1password'
