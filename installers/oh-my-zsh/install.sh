@@ -58,6 +58,7 @@ printf "Configuring Oh My ZSH!... "
 rm -f ~/.hushlogin
 rm -f ~/.zshrc
 rm -f ~/.oh-my-zsh/custom/git.zsh
+rm -f ~/.oh-my-zsh/custom/homebrew.zsh
 rm -f ~/.oh-my-zsh/custom/laravel.zsh
 rm -f ~/.oh-my-zsh/custom/path.zsh
 rm -f ~/.oh-my-zsh/custom/themes/lick.zsh-theme
@@ -65,6 +66,7 @@ rm -f ~/.oh-my-zsh/custom/themes/lick.zsh-theme
 cp $DIRECTORY/data/hushlogin ~/.hushlogin
 cp $DIRECTORY/data/zshrc ~/.zshrc
 cp $DIRECTORY/data/custom/git.zsh ~/.oh-my-zsh/custom/git.zsh
+cp $DIRECTORY/data/custom/homebrew.zsh ~/.oh-my-zsh/custom/homebrew.zsh
 cp $DIRECTORY/data/custom/laravel.zsh ~/.oh-my-zsh/custom/laravel.zsh
 cp $DIRECTORY/data/custom/path.zsh ~/.oh-my-zsh/custom/path.zsh
 cp $DIRECTORY/data/custom/themes/lick.zsh-theme ~/.oh-my-zsh/custom/themes/lick.zsh-theme
