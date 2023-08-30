@@ -36,6 +36,9 @@
     # Detect copies as well as renames.
     renames = copies
 
+[fetch]
+	prune = true
+
 [help]
     # Automatically correct and execute mistyped commands.
     autocorrect = 1
@@ -50,4 +53,3 @@
 
     # Make `git push` push relevant annotated tags when pushing branches out.
     followTags = true
-
