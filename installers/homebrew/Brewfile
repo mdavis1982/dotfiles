@@ -26,7 +26,6 @@ cask 'herd'
 cask 'phpstorm'
 cask 'screenflow'
 cask 'slack'
-cask 'spotify'
 cask 'tableplus'
 
 # Mac App Store
