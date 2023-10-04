@@ -56,7 +56,7 @@ esac
 printf "\nBootstrapping core module...\n\n"
 brew bundle install --file=$DIRECTORY/data/Brewfile.core --no-lock
 
-printf "Would you like to bootstrap the development module? (y/N): "
+printf "\nWould you like to bootstrap the development module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
@@ -68,7 +68,7 @@ case $RESPONSE in
         ;;
 esac
 
-printf "\n\nWould you like to bootstrap the audio module? (y/N): "
+printf "\nWould you like to bootstrap the audio module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
@@ -80,7 +80,7 @@ case $RESPONSE in
         ;;
 esac
 
-printf "\n\nWould you like to bootstrap the video module? (y/N): "
+printf "\nWould you like to bootstrap the video module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
@@ -93,6 +93,10 @@ case $RESPONSE in
 esac
 
 brew cleanup
+
+# Ask individual questions about specific hardware
+# ------------------------------------------------------------------------------
+source $DIRECTORY/install-hardware.sh
 
 # Success message
 # ------------------------------------------------------------------------------
