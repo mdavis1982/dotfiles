@@ -1,0 +1,25 @@
+#
+# Core
+# -----------------------------------------------------------------
+# This Brewfile contains things that are installed on all machines.
+# -----------------------------------------------------------------
+
+# Taps
+tap 'homebrew/bundle'
+tap 'homebrew/cask-fonts'
+
+# Fonts
+# - No global fonts required.
+
+# Binaries
+brew 'mas'
+
+# Apps
+cask 'bartender'
+cask 'google-chrome'
+cask 'slack'
+
+# Mac App Store
+mas '1Blocker', id: 1365531024
+mas 'Keynote', id: 409183694
+mas 'Moom', id: 419330170

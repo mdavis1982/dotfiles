@@ -1,0 +1,18 @@
+# Taps
+# No additional taps required
+
+# Fonts
+# No additional fonts required
+
+# Binaries
+# No additional binaries required
+
+# CLI
+# No additional CLI apps required
+
+# Apps
+# No additional apps required
+
+# Mac App Store
+mas 'Sound Studio', id: 405537804
+mas 'Logic Pro', id: 634148309

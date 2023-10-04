@@ -1,0 +1,24 @@
+# Taps
+# No additional taps required
+
+# Fonts
+cask 'font-jetbrains-mono'
+
+# Binaries
+brew 'ffmpeg'
+brew 'jq'
+
+# CLI
+brew 'node'
+
+# Apps
+cask 'dbngin'
+cask 'figma'
+cask 'godot'
+cask 'herd'
+cask 'phpstorm'
+cask 'tableplus'
+brew 'visual-studio-code'
+
+# Mac App Store
+# No additional Mac App Store apps required

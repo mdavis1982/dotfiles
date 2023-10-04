@@ -53,7 +53,45 @@ esac
 
 # Let's brew
 # ------------------------------------------------------------------------------
-brew bundle install --file=$DIRECTORY/Brewfile --no-lock
+printf "\nBootstrapping core module...\n\n"
+brew bundle install --file=$DIRECTORY/data/Brewfile.core --no-lock
+
+printf "Would you like to bootstrap the development module? (y/N): "
+read -r RESPONSE
+case $RESPONSE in
+    [yY])
+        brew bundle install --file=$DIRECTORY/data/Brewfile.development --no-lock
+        ;;
+    *)
+        printf "Development module not bootstrapped.\n"
+        [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 0
+        ;;
+esac
+
+printf "\n\nWould you like to bootstrap the audio module? (y/N): "
+read -r RESPONSE
+case $RESPONSE in
+    [yY])
+        brew bundle install --file=$DIRECTORY/data/Brewfile.audio --no-lock
+        ;;
+    *)
+        printf "Audio module not bootstrapped.\n"
+        [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 0
+        ;;
+esac
+
+printf "\n\nWould you like to bootstrap the video module? (y/N): "
+read -r RESPONSE
+case $RESPONSE in
+    [yY])
+        brew bundle install --file=$DIRECTORY/data/Brewfile.video --no-lock
+        ;;
+    *)
+        printf "Video module not bootstrapped.\n"
+        [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 0
+        ;;
+esac
+
 brew cleanup
 
 # Success message

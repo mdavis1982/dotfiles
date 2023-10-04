@@ -1,0 +1,17 @@
+# Taps
+# No additional taps required
+
+# Fonts
+# No additional fonts required
+
+# Binaries
+# No additional binaries required
+
+# CLI
+# No additional CLI apps required
+
+# Apps
+cask 'screenflow'
+
+# Mac App Store
+# No additional Mac App Store apps required
