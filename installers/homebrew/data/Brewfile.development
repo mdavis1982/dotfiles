@@ -18,7 +18,7 @@ cask 'godot'
 cask 'herd'
 cask 'phpstorm'
 cask 'tableplus'
-brew 'visual-studio-code'
+cask 'visual-studio-code'
 
 # Mac App Store
 # No additional Mac App Store apps required
