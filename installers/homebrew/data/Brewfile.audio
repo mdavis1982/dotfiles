@@ -11,7 +11,7 @@
 # No additional CLI apps required
 
 # Apps
-# No additional apps required
+cask 'qlab'
 
 # Mac App Store
 mas 'Logic Pro', id: 634148309
