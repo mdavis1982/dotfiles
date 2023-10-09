@@ -18,6 +18,7 @@ brew 'mas'
 cask 'bartender'
 cask 'google-chrome'
 cask 'slack'
+cask 'zoom'
 
 # Mac App Store
 mas '1Blocker', id: 1365531024
