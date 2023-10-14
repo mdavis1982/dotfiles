@@ -18,6 +18,7 @@ cask 'godot'
 cask 'herd'
 cask 'phpstorm'
 cask 'tableplus'
+cask 'tinkerwell'
 cask 'visual-studio-code'
 
 # Mac App Store
