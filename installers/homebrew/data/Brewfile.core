@@ -16,6 +16,7 @@ brew 'mas'
 
 # Apps
 cask 'bartender'
+cask 'dropbox'
 cask 'google-chrome'
 cask 'slack'
 cask 'zoom'
