@@ -64,7 +64,6 @@ case $RESPONSE in
         ;;
     *)
         printf "Development module not bootstrapped.\n"
-        [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 0
         ;;
 esac
 
@@ -76,7 +75,6 @@ case $RESPONSE in
         ;;
     *)
         printf "Audio module not bootstrapped.\n"
-        [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 0
         ;;
 esac
 
@@ -88,7 +86,6 @@ case $RESPONSE in
         ;;
     *)
         printf "Video module not bootstrapped.\n"
-        [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 0
         ;;
 esac
 
