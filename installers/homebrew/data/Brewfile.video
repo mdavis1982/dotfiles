@@ -14,4 +14,4 @@
 cask 'screenflow'
 
 # Mac App Store
-# No additional Mac App Store apps required
+mas 'Final Cut Pro', id: 424389933
