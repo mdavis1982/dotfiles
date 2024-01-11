@@ -89,6 +89,17 @@ case $RESPONSE in
         ;;
 esac
 
+printf "\nWould you like to bootstrap the electronics module? (y/N): "
+read -r RESPONSE
+case $RESPONSE in
+    [yY])
+        brew bundle install --file=$DIRECTORY/data/Brewfile.electronics --no-lock
+        ;;
+    *)
+        printf "Electronics module not bootstrapped.\n"
+        ;;
+esac
+
 brew cleanup
 
 # Ask individual questions about specific hardware
