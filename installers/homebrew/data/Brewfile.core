@@ -15,6 +15,7 @@ tap 'homebrew/cask-fonts'
 brew 'mas'
 
 # Apps
+cask 'alfred'
 cask 'bartender'
 cask 'dropbox'
 cask 'google-chrome'
