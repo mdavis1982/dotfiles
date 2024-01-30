@@ -20,6 +20,7 @@ cask 'bartender'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'slack'
+cask 'todoist'
 cask 'zoom'
 
 # Mac App Store
