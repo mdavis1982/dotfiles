@@ -20,7 +20,6 @@ cask 'bartender'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'slack'
-cask 'todoist'
 cask 'zoom'
 
 # Mac App Store
@@ -29,3 +28,4 @@ mas 'Keynote', id: 409183694
 mas 'Moom', id: 419330170
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
+mas 'Things', id: 904280696
