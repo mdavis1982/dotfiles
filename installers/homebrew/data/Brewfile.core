@@ -24,7 +24,6 @@ cask 'zoom'
 
 # Mac App Store
 mas '1Blocker', id: 1365531024
-mas 'Bear', id: 1091189122
 mas 'Keynote', id: 409183694
 mas 'Moom', id: 419330170
 mas 'Numbers', id: 409203825
