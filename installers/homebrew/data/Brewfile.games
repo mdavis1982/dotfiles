@@ -1,0 +1,17 @@
+# Taps
+# No additional taps required
+
+# Fonts
+# No additional fonts required
+
+# Binaries
+# No additional binaries required
+
+# CLI
+# No additiona CLI tools required
+
+# Apps
+cask 'minecraft'
+
+# Mac App Store
+# No additional Mac App Store apps required
