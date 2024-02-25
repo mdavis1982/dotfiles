@@ -3,6 +3,7 @@
 
 # Fonts
 cask 'font-jetbrains-mono'
+cask 'font-jetbrains-mono-nerd-font'
 
 # Binaries
 brew 'ffmpeg'
@@ -16,6 +17,7 @@ cask 'dbngin'
 cask 'figma'
 cask 'godot'
 cask 'herd'
+cask 'kitty'
 cask 'phpstorm'
 cask 'rapidapi'
 cask 'sf-symbols'
