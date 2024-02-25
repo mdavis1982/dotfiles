@@ -8,6 +8,7 @@ cask 'font-jetbrains-mono-nerd-font'
 # Binaries
 brew 'ffmpeg'
 brew 'jq'
+brew 'neovim'
 
 # CLI
 brew 'node'
