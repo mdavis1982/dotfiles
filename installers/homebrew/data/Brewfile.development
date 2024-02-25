@@ -9,6 +9,7 @@ cask 'font-jetbrains-mono-nerd-font'
 brew 'ffmpeg'
 brew 'jq'
 brew 'neovim'
+brew 'tmux'
 
 # CLI
 brew 'node'
