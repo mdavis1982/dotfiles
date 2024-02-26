@@ -6,9 +6,11 @@ cask 'font-jetbrains-mono'
 cask 'font-jetbrains-mono-nerd-font'
 
 # Binaries
+brew 'fd'
 brew 'ffmpeg'
 brew 'jq'
 brew 'neovim'
+brew 'ripgrep'
 brew 'tmux'
 
 # CLI
