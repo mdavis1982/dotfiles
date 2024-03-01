@@ -23,11 +23,20 @@ vim.keymap.set('v', 'p', '"_dP')
 vim.keymap.set('i', ';;', '<Esc>A;')
 vim.keymap.set('i', ',,', '<Esc>A,')
 
+-- Get out of insert mode quickly
+vim.keymap.set('i', 'jj', '<Esc>')
+
 -- Quickly clear search highlighting
 vim.keymap.set('n', '<Leader>k', ':nohlsearch<CR>')
 
 -- Open the current file in the default program
 vim.keymap.set('n', '<Leader>x', ':!open %<CR><CR>')
+
+-- Resize splits with arrow keys
+vim.keymap.set('n', '<C-Up>', ':resize +2<CR>')
+vim.keymap.set('n', '<C-Down>', ':resize -2<CR>')
+vim.keymap.set('n', '<C-Left>', ':vertical resize -2<CR>')
+vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>')
 
 -- Move lines up and down
 vim.keymap.set('i', '<A-j>', '<Esc>:move .+1<CR>==gi')

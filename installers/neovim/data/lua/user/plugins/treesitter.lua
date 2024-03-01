@@ -5,8 +5,9 @@ return {
     build = function()
         require('nvim-treesitter.install').update({ with_sync = true })
     end,
+
     dependencies = {
-        { 'nvim-treesitter/playground', cmd = "TSPlaygroundToggle" },
+        { 'nvim-treesitter/playground', cmd = 'TSPlaygroundToggle' },
         {
             'JoosepAlviste/nvim-ts-context-commentstring',
             opts = {
@@ -28,7 +29,7 @@ return {
         },
         indent = {
             enable = true,
-            disable = { "yaml" }
+            disable = { 'yaml' }
         },
         rainbow = {
             enable = true,
@@ -49,14 +50,14 @@ return {
     config = function (_, opts)
         require('nvim-treesitter.configs').setup(opts)
 
-        local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+        local parser_config = require 'nvim-treesitter.parsers'.get_parser_configs()
         parser_config.blade = {
             install_info = {
-                url = "https://github.com/EmranMR/tree-sitter-blade",
-                files = {"src/parser.c"},
-                branch = "main",
+                url = 'https://github.com/EmranMR/tree-sitter-blade',
+                files = {'src/parser.c'},
+                branch = 'main',
             },
-            filetype = "blade"
+            filetype = 'blade'
         }
         vim.filetype.add({
             pattern = {

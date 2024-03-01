@@ -31,9 +31,6 @@ return {
             on_attach = function(client, bufnr)
                 client.server_capabilities.documentFormattingProvider = false
                 client.server_capabilities.documentRangeFormattingProvider = false
-                -- if client.server_capabilities.inlayHintProvider then
-                --   vim.lsp.buf.inlay_hint(bufnr, true)
-                -- end
             end,
             capabilities = capabilities,
             init_options = {
@@ -61,8 +58,8 @@ return {
                 client.server_capabilities.documentRangeFormattingProvider = false
             end,
             init_options = {
-                ["language_server_phpstan.enabled"] = false,
-                ["language_server_psalm.enabled"] = false,
+                ['language_server_phpstan.enabled'] = false,
+                ['language_server_psalm.enabled'] = false,
             },
             handlers = {
                 ['textDocument/publishDiagnostics'] = function() end
@@ -74,9 +71,6 @@ return {
             on_attach = function(client, bufnr)
                 client.server_capabilities.documentFormattingProvider = false
                 client.server_capabilities.documentRangeFormattingProvider = false
-                -- if client.server_capabilities.inlayHintProvider then
-                --   vim.lsp.buf.inlay_hint(bufnr, true)
-                -- end
             end,
             capabilities = capabilities,
             -- Enable "Take Over Mode" where volar will provide all JS/TS LSP services
@@ -99,7 +93,7 @@ return {
 
         -- null-ls
         local null_ls = require('null-ls')
-        local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+        local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
         null_ls.setup({
             temp_dir = '/tmp',
             sources = {
@@ -127,9 +121,9 @@ return {
                 }),
             },
             on_attach = function(client, bufnr)
-                if client.supports_method("textDocument/formatting") then
+                if client.supports_method('textDocument/formatting') then
                     vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-                    vim.api.nvim_create_autocmd("BufWritePre", {
+                    vim.api.nvim_create_autocmd('BufWritePre', {
                         group = augroup,
                         buffer = bufnr,
                         callback = function()

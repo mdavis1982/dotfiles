@@ -1,7 +1,7 @@
 -- Completion
 return {
     'hrsh7th/nvim-cmp',
-    event = "InsertEnter",
+    event = 'InsertEnter',
     dependencies = {
         'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-nvim-lsp-signature-help',
@@ -25,13 +25,13 @@ return {
         end
 
         local source_map = {
-            buffer = "Buffer",
-            nvim_lsp = "LSP",
-            nvim_lsp_signature_help = "Signature",
-            luasnip = "LuaSnip",
-            nvim_lua = "Lua",
-            path = "Path",
-            copilot = "Copilot",
+            buffer = 'Buffer',
+            nvim_lsp = 'LSP',
+            nvim_lsp_signature_help = 'Signature',
+            luasnip = 'LuaSnip',
+            nvim_lua = 'Lua',
+            path = 'Path',
+            copilot = 'Copilot',
         }
 
         local function ltrim(s)
@@ -54,7 +54,7 @@ return {
                 }
             },
             formatting = {
-                fields = { "kind", "abbr", "menu" },
+                fields = { 'kind', 'abbr', 'menu' },
                 format = lspkind.cmp_format({
                     mode = 'symbol',
                     -- See: https://www.reddit.com/r/neovim/comments/103zetf/how_can_i_get_a_vscodelike_tailwind_css/
@@ -83,8 +83,7 @@ return {
                 }),
             },
             mapping = {
-                ["<Tab>"] = cmp.mapping(function(fallback)
-                    -- print('tab...')
+                ['<Tab>'] = cmp.mapping(function(fallback)
                     if cmp.visible() then
                         cmp.select_next_item()
                     elseif luasnip.expand_or_jumpable() then
@@ -94,8 +93,8 @@ return {
                     else
                         fallback()
                     end
-                end, { "i", "s" }),
-                ["<S-Tab>"] = cmp.mapping(function(fallback)
+                end, { 'i', 's' }),
+                ['<S-Tab>'] = cmp.mapping(function(fallback)
                     if cmp.visible() then
                         cmp.select_prev_item()
                     elseif luasnip.jumpable(-1) then
@@ -103,7 +102,7 @@ return {
                     else
                         fallback()
                     end
-                end, { "i", "s" }),
+                end, { 'i', 's' }),
                 ['<CR>'] = cmp.mapping.confirm({ select = false }),
             },
             sources = {
