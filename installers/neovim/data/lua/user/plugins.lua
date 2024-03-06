@@ -29,6 +29,7 @@ require('lazy').setup({
     { import = 'user.plugins.treesj' },
     { import = 'user.plugins.vim-commentary' },
     { import = 'user.plugins.vim-pasta' },
+    { import = 'user.plugins.vim-repeat' },
     { import = 'user.plugins.vim-rooter' },
     { import = 'user.plugins.vim-surround' },
     { import = 'user.plugins.vim-test' },
