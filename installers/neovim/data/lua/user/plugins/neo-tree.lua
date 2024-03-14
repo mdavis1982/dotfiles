@@ -74,6 +74,9 @@ return {
                 hide_by_name = {
                     '.git',
                 },
+                always_show = {
+                    '.env'
+                }
             },
             -- follow_current_file = {
             --   enabled = true,
