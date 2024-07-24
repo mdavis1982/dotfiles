@@ -8,6 +8,7 @@
 # No additional binaries required
 
 # CLI
+brew 'ffmpeg'
 brew 'sox'
 
 # Apps

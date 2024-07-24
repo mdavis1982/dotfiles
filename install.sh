@@ -22,8 +22,6 @@ source $BASE_DIRECTORY/installers/filesystem/install.sh
 source $BASE_DIRECTORY/installers/git/install.sh
 source $BASE_DIRECTORY/installers/oh-my-zsh/install.sh
 source $BASE_DIRECTORY/installers/homebrew/install.sh
-source $BASE_DIRECTORY/installers/kitty/install.sh
-source $BASE_DIRECTORY/installers/neovim/install.sh
 
 # Show installed message
 # ------------------------------------------------------------------------------

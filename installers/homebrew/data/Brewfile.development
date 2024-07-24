@@ -3,28 +3,18 @@
 
 # Fonts
 cask 'font-jetbrains-mono'
-cask 'font-jetbrains-mono-nerd-font'
 
 # Binaries
-brew 'fd'
-brew 'ffmpeg'
 brew 'jq'
-brew 'neovim'
-brew 'ripgrep'
 brew 'tmux'
-brew 'wget'
 
 # CLI
-brew 'node'
+# No additional CLI tools required
 
 # Apps
-cask 'dbngin'
 cask 'figma'
 cask 'godot'
 cask 'herd'
-cask 'kitty'
-cask 'phpstorm'
-cask 'rapidapi'
 cask 'sf-symbols'
 cask 'tableplus'
 cask 'tinkerwell'
