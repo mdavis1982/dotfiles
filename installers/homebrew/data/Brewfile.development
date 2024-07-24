@@ -21,4 +21,4 @@ cask 'tinkerwell'
 cask 'visual-studio-code'
 
 # Mac App Store
-# No additional Mac App Store apps required
+mas 'Xcode', id: 497799835
