@@ -6,7 +6,6 @@
 
 # Taps
 tap 'homebrew/bundle'
-tap 'homebrew/cask-fonts'
 
 # Fonts
 # - No global fonts required.

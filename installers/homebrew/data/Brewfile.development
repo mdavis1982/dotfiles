@@ -6,7 +6,6 @@ cask 'font-jetbrains-mono'
 
 # Binaries
 brew 'jq'
-brew 'tmux'
 
 # CLI
 # No additional CLI tools required
