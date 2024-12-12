@@ -14,8 +14,6 @@ tap 'homebrew/bundle'
 brew 'mas'
 
 # Apps
-cask 'alfred'
-cask 'bartender'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'slack'
