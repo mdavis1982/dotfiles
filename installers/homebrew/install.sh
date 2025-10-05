@@ -54,13 +54,13 @@ esac
 # Let's brew
 # ------------------------------------------------------------------------------
 printf "\nBootstrapping core module...\n\n"
-brew bundle install --file=$DIRECTORY/data/Brewfile.core --no-lock
+brew bundle install --file=$DIRECTORY/data/Brewfile.core
 
 printf "\nWould you like to bootstrap the development module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
-        brew bundle install --file=$DIRECTORY/data/Brewfile.development --no-lock
+        brew bundle install --file=$DIRECTORY/data/Brewfile.development
         ;;
     *)
         printf "Development module not bootstrapped.\n"
@@ -71,7 +71,7 @@ printf "\nWould you like to bootstrap the audio module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
-        brew bundle install --file=$DIRECTORY/data/Brewfile.audio --no-lock
+        brew bundle install --file=$DIRECTORY/data/Brewfile.audio
         ;;
     *)
         printf "Audio module not bootstrapped.\n"
@@ -82,7 +82,7 @@ printf "\nWould you like to bootstrap the video module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
-        brew bundle install --file=$DIRECTORY/data/Brewfile.video --no-lock
+        brew bundle install --file=$DIRECTORY/data/Brewfile.video
         ;;
     *)
         printf "Video module not bootstrapped.\n"
@@ -93,7 +93,7 @@ printf "\nWould you like to bootstrap the electronics module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
-        brew bundle install --file=$DIRECTORY/data/Brewfile.electronics --no-lock
+        brew bundle install --file=$DIRECTORY/data/Brewfile.electronics
         ;;
     *)
         printf "Electronics module not bootstrapped.\n"
@@ -104,7 +104,7 @@ printf "\nWould you like to bootstrap the games module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
-        brew bundle install --file=$DIRECTORY/data/Brewfile.games --no-lock
+        brew bundle install --file=$DIRECTORY/data/Brewfile.games
         ;;
     *)
         printf "Games module not bootstrapped.\n"
