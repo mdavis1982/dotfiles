@@ -12,6 +12,7 @@
 
 # Apps
 cask 'arduino-ide'
+cask 'kicad'
 
 # Mac App Store
 # No additional Mac App Store apps required
