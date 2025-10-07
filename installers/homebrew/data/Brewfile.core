@@ -5,7 +5,7 @@
 # -----------------------------------------------------------------
 
 # Taps
-tap 'homebrew/bundle'
+# No additional taps required.
 
 # Fonts
 # - No global fonts required.
