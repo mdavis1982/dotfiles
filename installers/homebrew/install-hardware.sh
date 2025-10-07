@@ -24,7 +24,6 @@ case $RESPONSE in
         ;;
     *)
         printf "Logi Options+ not installed.\n"
-        [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 0
         ;;
 esac
 
@@ -36,6 +35,5 @@ case $RESPONSE in
         ;;
     *)
         printf "Stream Deck not installed.\n"
-        [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 0
         ;;
 esac
