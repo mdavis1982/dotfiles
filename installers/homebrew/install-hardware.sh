@@ -37,3 +37,14 @@ case $RESPONSE in
         printf "Stream Deck not installed.\n"
         ;;
 esac
+
+printf "\nWould you like to install Røde Connect? (y/N): "
+read -r RESPONSE
+case $RESPONSE in
+    [yY])
+        brew install --cask rode-connect
+        ;;
+    *)
+        printf "Røde Connect not installed.\n"
+        ;;
+esac
