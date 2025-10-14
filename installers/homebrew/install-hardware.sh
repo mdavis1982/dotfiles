@@ -38,13 +38,13 @@ case $RESPONSE in
         ;;
 esac
 
-printf "\nWould you like to install Røde Connect? (y/N): "
+printf "\nWould you like to install Røde Central? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
     [yY])
-        brew install --cask rode-connect
+        brew install --cask rode-central
         ;;
     *)
-        printf "Røde Connect not installed.\n"
+        printf "Røde Central not installed.\n"
         ;;
 esac
