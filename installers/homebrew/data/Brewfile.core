@@ -15,6 +15,7 @@ brew 'mas'
 
 # Apps
 cask 'chatgpt'
+cask 'discord'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'slack'
