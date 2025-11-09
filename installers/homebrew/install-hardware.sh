@@ -38,6 +38,17 @@ case $RESPONSE in
         ;;
 esac
 
+printf "\nWould you like to install Elgato Control Center? (y/N): "
+read -r RESPONSE
+case $RESPONSE in
+    [yY])
+        brew install --cask elgato-control-center
+        ;;
+    *)
+        printf "Elgato Control Center not installed.\n"
+        ;;
+esac
+
 printf "\nWould you like to install Røde Central? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
