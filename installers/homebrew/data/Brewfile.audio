@@ -18,4 +18,3 @@ cask 'qlab'
 # Mac App Store
 mas 'Logic Pro', id: 634148309
 mas 'MainStage', id: 634159523
-mas 'Sound Studio', id: 405537804
