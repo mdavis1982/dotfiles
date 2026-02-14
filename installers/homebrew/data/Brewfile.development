@@ -8,7 +8,7 @@ cask 'font-jetbrains-mono'
 brew 'jq'
 
 # CLI
-# No additional CLI tools required
+cask 'claude-code'
 
 # Apps
 cask 'figma'
