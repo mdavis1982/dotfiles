@@ -100,6 +100,17 @@ case $RESPONSE in
         ;;
 esac
 
+printf "\nWould you like to bootstrap the 3D printing module? (y/N): "
+read -r RESPONSE
+case $RESPONSE in
+    [yY])
+        brew bundle install --file=$DIRECTORY/data/Brewfile.3dprinting
+        ;;
+    *)
+        printf "3D printing module not bootstrapped.\n"
+        ;;
+esac
+
 printf "\nWould you like to bootstrap the games module? (y/N): "
 read -r RESPONSE
 case $RESPONSE in
