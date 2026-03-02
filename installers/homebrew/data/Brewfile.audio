@@ -10,6 +10,7 @@
 # CLI
 brew 'ffmpeg'
 brew 'sox'
+brew 'yt-dlp'
 
 # Apps
 cask 'ik-product-manager'
