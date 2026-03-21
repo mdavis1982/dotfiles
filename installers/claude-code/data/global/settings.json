@@ -1,0 +1,10 @@
+{
+    "env": {},
+    "permissions": {
+        "defaultMode": "plan"
+    },
+    "mcpServers": {},
+    "enabledPlugins": {},
+    "skipDangerousModePermissionPrompt": true,
+    "effortLevel": "high"
+}
