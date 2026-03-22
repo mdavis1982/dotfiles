@@ -39,10 +39,12 @@ printf "Configuring Claude Code...\n"
 
 printf "Removing any existing configuration... "
 rm -f ~/.claude/settings.json
+rm -f ~/.claude/statusline.sh
 printf "\033[32mDone\033[0m\n"
 
 printf "Installing new configuration... "
 cp $DIRECTORY/data/global/settings.json ~/.claude/settings.json
+cp $DIRECTORY/data/global/statusline.sh ~/.claude/statusline.sh
 printf "\033[32mDone\033[0m\n"
 
 # Success message

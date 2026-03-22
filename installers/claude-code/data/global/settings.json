@@ -3,6 +3,10 @@
     "permissions": {
         "defaultMode": "plan"
     },
+    "statusLine": {
+        "type": "command",
+        "command": "~/.claude/statusline.sh"
+    },
     "mcpServers": {},
     "enabledPlugins": {},
     "skipDangerousModePermissionPrompt": true,
