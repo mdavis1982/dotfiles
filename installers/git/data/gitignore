@@ -25,6 +25,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Environment files
+.env
+.env.*
+
 # Other files
 .idea
 .claude/settings.local.json

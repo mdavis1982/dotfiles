@@ -19,7 +19,7 @@ fi
 # ------------------------------------------------------------------------------
 DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Ask if the user wants to configure Git
+# Ask if the user wants to configure Claude Code
 # ------------------------------------------------------------------------------
 printf "Would you like to install the Claude Code configuration files? (y/N): "
 read -r RESPONSE
