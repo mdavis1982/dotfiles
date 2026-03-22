@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "Home Assistant": {
+            "command": "uvx",
+            "args": ["ha-mcp@latest"],
+            "env": {
+                "HOMEASSISTANT_URL": "${HOMEASSISTANT_URL}",
+                "HOMEASSISTANT_TOKEN": "${HOMEASSISTANT_TOKEN}"
+            }
+        }
+    }
+}

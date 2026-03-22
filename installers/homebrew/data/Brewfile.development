@@ -6,6 +6,7 @@ cask 'font-jetbrains-mono'
 
 # Binaries
 brew 'jq'
+brew 'uv'
 
 # CLI
 cask 'claude-code'

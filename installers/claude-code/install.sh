@@ -51,6 +51,57 @@ cp $DIRECTORY/data/global/statusline.sh ~/.claude/statusline.sh
 cp -r $DIRECTORY/data/global/skills ~/.claude/skills
 printf "\033[32mDone\033[0m\n"
 
+# Install MCP servers into ~/.claude.json
+# ------------------------------------------------------------------------------
+MCP_FILE=$DIRECTORY/data/global/mcp.json
+MCP_JSON=$(cat "$MCP_FILE")
+CURRENT_SERVER=""
+
+while IFS=$'\t' read -r SERVER KEY <&3; do
+    if [[ "$SERVER" != "$CURRENT_SERVER" ]]; then
+        [[ -z "$CURRENT_SERVER" ]] && printf "\nConfiguring MCP server secrets...\n"
+        CURRENT_SERVER="$SERVER"
+        printf "\n  \033[4m%s\033[0m\n" "$SERVER"
+    fi
+
+    EXISTING=$(jq -r --arg s "$SERVER" --arg k "$KEY" \
+        '.mcpServers[$s].env[$k] // ""' ~/.claude.json 2>/dev/null)
+
+    if [[ -n "$EXISTING" && ! "$EXISTING" =~ ^\$\{ ]]; then
+        printf "    \033[33m%s\033[0m is already set. Keep existing value? (Y/n): " "$KEY"
+        read -r RESPONSE
+        case $RESPONSE in
+            [nN])
+                printf "    Enter new value for \033[33m%s\033[0m: " "$KEY"
+                read -rs VALUE
+                printf "\n"
+                ;;
+            *)
+                VALUE="$EXISTING"
+                ;;
+        esac
+    else
+        printf "    Enter value for \033[33m%s\033[0m: " "$KEY"
+        read -rs VALUE
+        printf "\n"
+    fi
+
+    MCP_JSON=$(echo "$MCP_JSON" | jq --arg s "$SERVER" --arg k "$KEY" --arg v "$VALUE" \
+        '.mcpServers[$s].env[$k] = $v')
+done 3< <(jq -r '
+    .mcpServers | to_entries[] |
+    .key as $server |
+    .value.env // {} | to_entries[] |
+    select(.value | test("\\$\\{")) |
+    "\($server)\t\(.key)"
+' "$MCP_FILE" 2>/dev/null)
+
+printf "Installing MCP servers... "
+TEMP=$(mktemp)
+jq --argjson servers "$(echo "$MCP_JSON" | jq '.mcpServers')" \
+    '.mcpServers = $servers' ~/.claude.json > "$TEMP" && mv "$TEMP" ~/.claude.json
+printf "\033[32mDone\033[0m\n"
+
 # Success message
 # ------------------------------------------------------------------------------
 printf "\033[32mClaude Code configuration installed.\033[0m\n"
