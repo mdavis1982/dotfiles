@@ -57,15 +57,15 @@ MCP_FILE=$DIRECTORY/data/global/mcp.json
 MCP_JSON=$(cat "$MCP_FILE")
 CURRENT_SERVER=""
 
-while IFS=$'\t' read -r SERVER KEY <&3; do
+while IFS=$'\t' read -r SERVER FIELD KEY <&3; do
     if [[ "$SERVER" != "$CURRENT_SERVER" ]]; then
         [[ -z "$CURRENT_SERVER" ]] && printf "\nConfiguring MCP server secrets...\n"
         CURRENT_SERVER="$SERVER"
         printf "\n  \033[4m%s\033[0m\n" "$SERVER"
     fi
 
-    EXISTING=$(jq -r --arg s "$SERVER" --arg k "$KEY" \
-        '.mcpServers[$s].env[$k] // ""' ~/.claude.json 2>/dev/null)
+    EXISTING=$(jq -r --arg s "$SERVER" --arg f "$FIELD" --arg k "$KEY" \
+        '.mcpServers[$s][$f][$k] // ""' ~/.claude.json 2>/dev/null)
 
     if [[ -n "$EXISTING" && ! "$EXISTING" =~ ^\$\{ ]]; then
         printf "    \033[33m%s\033[0m is already set. Keep existing value? (Y/n): " "$KEY"
@@ -86,14 +86,15 @@ while IFS=$'\t' read -r SERVER KEY <&3; do
         printf "\n"
     fi
 
-    MCP_JSON=$(echo "$MCP_JSON" | jq --arg s "$SERVER" --arg k "$KEY" --arg v "$VALUE" \
-        '.mcpServers[$s].env[$k] = $v')
+    MCP_JSON=$(echo "$MCP_JSON" | jq --arg s "$SERVER" --arg f "$FIELD" --arg k "$KEY" --arg v "$VALUE" \
+        '.mcpServers[$s][$f][$k] = $v')
 done 3< <(jq -r '
     .mcpServers | to_entries[] |
     .key as $server |
-    .value.env // {} | to_entries[] |
+    ("env", "headers") as $field |
+    .value[$field] // {} | to_entries[] |
     select(.value | test("\\$\\{")) |
-    "\($server)\t\(.key)"
+    "\($server)\t\($field)\t\(.key)"
 ' "$MCP_FILE" 2>/dev/null)
 
 printf "Installing MCP servers... "
