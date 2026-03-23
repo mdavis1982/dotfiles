@@ -1,7 +1,11 @@
 {
     "env": {},
     "permissions": {
-        "defaultMode": "plan"
+        "defaultMode": "plan",
+        "allow": [
+            "WebFetch",
+            "WebSearch"
+        ]
     },
     "statusLine": {
         "type": "command",
