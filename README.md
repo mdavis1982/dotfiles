@@ -148,15 +148,10 @@ Optional per-device installs, prompted individually:
 ### Lick Theme
 A clean, informative ZSH prompt:
 
-```
-matt at MacBook in ~/Developer/Other/dotfiles on git:main ●
-→
-```
-
-Shows your username, machine name, current directory, and git branch with a dirty/clean indicator (red ✖︎ / green ●). Supports custom machine names via `~/.machine-name`.
-
 <!-- screenshot: The Lick prompt in action -->
 ![Lick Theme](screenshots/lick-theme.png)
+
+Shows your username, machine name, current directory, and git branch with a dirty/clean indicator (red ✖︎ / green ●). Supports custom machine names via `~/.machine-name`.
 
 ### Git Aliases
 ```bash
@@ -199,16 +194,10 @@ This repo ships a full Claude Code configuration - not just settings, but a cust
 ### Statusline
 A custom statusline that replaces the default Claude Code status bar with a live dashboard:
 
-```
-dotfiles ●
-In: 45.2k | Out: 3.1k | Cached: 12.8k | Total: 61.1k | Context: 58.0k / 23%
-Session: 4m 12s | Version: 1.0.0
-```
-
-Shows repository name with git dirty/clean status, token usage with SI notation, context window usage with colour-coded warnings (green → yellow → red as you approach limits), session duration, and Claude version.
-
 <!-- screenshot: The statusline in Claude Code -->
 ![Statusline](screenshots/statusline.png)
+
+Shows repository name with git dirty/clean status, token usage with SI notation, context window usage with colour-coded warnings (green → yellow → red as you approach limits), session duration, and Claude version.
 
 ### Skills
 Ships with custom skills in `~/.claude/skills/` that extend Claude's capabilities. Add your own by dropping `.md` files into the skills directory.
