@@ -28,6 +28,7 @@ Temporary Items
 # Environment files
 .env
 .env.*
+!.env.example
 
 # Other files
 .idea
