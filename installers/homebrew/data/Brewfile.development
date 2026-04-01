@@ -9,7 +9,7 @@ brew 'jq'
 brew 'uv'
 
 # CLI
-cask 'claude-code'
+cask 'claude-code@latest'
 
 # Apps
 cask 'figma'
