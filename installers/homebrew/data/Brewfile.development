@@ -12,6 +12,7 @@ brew 'uv'
 cask 'claude-code@latest'
 
 # Apps
+cask 'claude'
 cask 'figma'
 cask 'godot'
 cask 'herd'
