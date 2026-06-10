@@ -11,6 +11,7 @@
 # No additional CLI tools required
 
 # Apps
+cask 'clone-hero'
 cask 'minecraft'
 
 # Mac App Store

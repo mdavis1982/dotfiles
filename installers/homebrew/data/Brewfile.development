@@ -10,6 +10,7 @@ brew 'uv'
 
 # CLI
 cask 'claude-code@latest'
+cask 'codex'
 
 # Apps
 cask 'claude'
