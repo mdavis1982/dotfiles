@@ -8,7 +8,7 @@ composer test
 If any single element fails, the task is **not** done. The underlying problem must be fixed and `composer test` re-run. Keep going around this loop until `composer test` reports no problems at all.
 
 ## What `composer test` runs
-`composer test` first clears the coniguration cache, and then chains the checks below. Each has a specific, required response when it fails.
+`composer test` first clears the configuration cache, and then chains the checks below. Each has a specific, required response when it fails.
 
 ### Type coverage - `pest --type-coverage --min=100`
 If type coverage checks fail, **add the missing types**. Every parameter, return type and property must be typed so coverage stays at 100%. This includes `void` types.

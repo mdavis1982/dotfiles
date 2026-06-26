@@ -48,7 +48,7 @@ Schema::create('{table}', function (Blueprint $table): void {
 - **`// ID`** - the primary key (`$table->id()`)
 - **`// Relationships`** - foreign keys (see **Foreign keys** below)
 - **`// Data`** - the table's own columns
-- **`// Indexes`** - any explicit indexes. Omitted if not required.
+- **`// Indexes`** - any explicit indexes. Omitted if not required
 - Group semantically related columns with blank lines. The date pair in the example above sits apart from the strings
 - Use blank lines liberally within a section to show where one logical group ends and the next begins
 - A blank line always precedes `$table->timestamps();`

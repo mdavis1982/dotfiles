@@ -11,8 +11,8 @@ when_to_use: Use when making any changes to a Laravel project, including creatin
 - Type every parameter, return type, and property - including void types.
 - Use short nullable notation: `?string` not `string|null`.
 - Prefer `final` classes. Favour immutability.
-- Keep classes small and single-purpoe, with clear, unabbreviated names.
-- Let the Linter own formatting. Don't hand-format code.
+- Keep classes small and single-purpose, with clear, unabbreviated names.
+- Let the linter own formatting. Don't hand-format code.
 
 ## Reference files
 Before doing any of the work below, read the matching reference file and follow it.
@@ -20,4 +20,5 @@ Before doing any of the work below, read the matching reference file and follow 
 | Reference                                  | When to use                                             |
 |--------------------------------------------|---------------------------------------------------------|
 | [Migrations](references/migrations.md)     | Writing or updating a database migration.               |
+| [Models](references/models.md)             | Creating, editing or updating a model.                  |
 | [Verification](references/verification.md) | Verifying a change. Running the test and quality suite. |
