@@ -44,6 +44,7 @@ public function definition(): array
     - to set status columns
 - Give every state method a docblock in the form `Indicate that the <model> ...`
 - Return `static`, mutating attributes through `->state()`
+- **DO NOT** write tests for state methods. They exist to compose models in other tests, not to be tested themselves, so they never appear in the model's unit test
 
 ```php
 /**

@@ -63,6 +63,7 @@ it('casts columns to the correct types', function (string $column, string $type)
 - Use `'int'` / `'string'` for primitives and `CarbonImmutable::class` for timestamps; foreign IDs are
 `'int'`.
 - Add a test for each relationship, too. See [Model relationships](model-relationships.md).
+- **DO NOT** write tests for factory state methods. The model unit test covers columns, casts and relationships only. State methods are not unit-tested.
 
 ## 6. Keep column order in sync
 The migration's column order is canonical. Mirror it in `casts()`, the factory `definition()` and both column lists in the test. See [Models](../models.md).
