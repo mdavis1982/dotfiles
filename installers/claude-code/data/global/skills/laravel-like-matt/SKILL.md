@@ -21,4 +21,5 @@ Before doing any of the work below, read the matching reference file and follow 
 |--------------------------------------------|---------------------------------------------------------|
 | [Migrations](references/migrations.md)     | Writing or updating a database migration.               |
 | [Models](references/models.md)             | Creating, editing or updating a model.                  |
+| [Enums](references/enums.md)               | Creating, editing or updating enums.                    |
 | [Verification](references/verification.md) | Verifying a change. Running the test and quality suite. |
