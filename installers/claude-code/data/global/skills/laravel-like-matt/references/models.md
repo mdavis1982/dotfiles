@@ -17,6 +17,15 @@ Relation::enforceMorphMap([
 ]);
 ```
 
+- If the model has multiple words, kebab-case the morph map entry:
+
+```php
+Relation::enforceMorphMap([
+    'article-tag' => ArticleTag::class,
+    'user' => User::class,
+]);
+```
+
 ## Keeping column order in sync
 - Treat the migration's column order as canonical
 - Mirror the canonical order everywhere: the model's `casts()`, the factory `definition()`, and any list of columns in the model's unit tests
