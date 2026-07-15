@@ -13,6 +13,7 @@ when_to_use: Use when making any changes to a Laravel project, including creatin
 - Prefer `final` classes. Favour immutability.
 - Keep classes small and single-purpose, with clear, unabbreviated names.
 - Let the linter own formatting. Don't hand-format code.
+- Prefer the action pattern when appropriate.
 
 ## Reference files
 Before doing any of the work below, read the matching reference file and follow it.
@@ -23,3 +24,4 @@ Before doing any of the work below, read the matching reference file and follow 
 | [Models](references/models.md)             | Creating, editing or updating a model.                  |
 | [Enums](references/enums.md)               | Creating, editing or updating enums.                    |
 | [Verification](references/verification.md) | Verifying a change. Running the test and quality suite. |
+| [Actions](references/actions.md)           | Writing code that could be a reusable action.           |
