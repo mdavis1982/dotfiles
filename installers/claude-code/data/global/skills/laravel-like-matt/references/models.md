@@ -6,6 +6,13 @@ These are conventions for writing, updating and maintaining Eloquent models. Thi
 - Cast **every property that is not a string** in the `casts()` method. String columns need no cast. Don't cast foreign IDs
 - Cast timestamps to `immutable_datetime`. The project uses `CarbonImmutable` for all dates
 - Use attributes (e.g. `#[Hidden([...])]`) rather than class properties where an equivalent attribute exists
+- When interacting with models via Eloquent, always start with the `query()` method:
+
+```php
+User::query()
+    ->where('email', 'foo@example.com')
+    ->first();
+```
 
 ## Morph map
 - **Every** model must be registered in the morph map, even if it is never used as a morph target. In `AppServiceProvider::configureMorphMap()`, add an entry to `Relation::enforceMorphMap([...])` keyed by a lowercase singular alias, kept in alphabetical order (and add the `use App\Models\<ModelName>;` import):
