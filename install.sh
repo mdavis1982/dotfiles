@@ -20,6 +20,7 @@ printf "\033[35;4mPrerequisites\033[0m\n"
 source $BASE_DIRECTORY/installers/command-line-tools/check.sh
 source $BASE_DIRECTORY/installers/filesystem/install.sh
 source $BASE_DIRECTORY/installers/git/install.sh
+source $BASE_DIRECTORY/installers/ghostty/install.sh
 source $BASE_DIRECTORY/installers/oh-my-zsh/install.sh
 source $BASE_DIRECTORY/installers/homebrew/install.sh
 source $BASE_DIRECTORY/installers/claude-code/install.sh
