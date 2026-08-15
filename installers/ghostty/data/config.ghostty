@@ -11,3 +11,8 @@ window-padding-y = 12
 window-padding-balance = true
 window-width = 180
 window-height = 36
+
+working-directory = home
+window-inherit-working-directory = false
+tab-inherit-working-directory = false
+split-inherit-working-directory = true

@@ -3,12 +3,15 @@
 
 # Fonts
 cask 'font-jetbrains-mono'
+cast 'font-jetbrains-mono-nerd-font'
 
 # Binaries
-brew 'jq'
-brew 'uv'
-brew 'ripgrep'
 brew 'fd'
+brew 'jq'
+brew 'ripgrep'
+brew 'tree-sitter'
+brew 'tree-sitter-cli'
+brew 'uv'
 
 # CLI
 cask 'claude-code@latest'
