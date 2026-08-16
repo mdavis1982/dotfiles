@@ -11,7 +11,7 @@ if [ ! -d "$( xcode-select -p )" ]; then
     printf "Or by installing XCode.\n\n"
     printf "Exiting."
 
-    exit 0
+    exit 1
 else
     printf "\033[32mInstalled\033[0m\n"
 fi
