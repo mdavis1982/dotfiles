@@ -15,6 +15,17 @@ else
     printf "\033[32mInstalled\033[0m\n"
 fi
 
+printf "Checking for jq installation... "
+if ! command -v jq &> /dev/null; then
+    printf "\033[31mNot found\033[0m\n\n"
+    printf "jq is required to configure MCP servers. Install it with:\n\n"
+    printf "    \033[33mbrew install jq\033[0m\n\n"
+    printf "Exiting.\n"
+    [[ "${BASH_SOURCE[0]}" != "${0}" ]] && return 1 || exit 1
+else
+    printf "\033[32mInstalled\033[0m\n"
+fi
+
 # Set the directory to the directory where the script is
 # ------------------------------------------------------------------------------
 DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -45,6 +56,7 @@ rm -rf ~/.claude/skills
 printf "\033[32mDone\033[0m\n"
 
 printf "Installing new configuration... "
+mkdir -p ~/.claude
 cp $DIRECTORY/data/global/CLAUDE.md ~/.claude/CLAUDE.md
 cp $DIRECTORY/data/global/settings.json ~/.claude/settings.json
 cp $DIRECTORY/data/global/statusline.sh ~/.claude/statusline.sh
@@ -98,6 +110,7 @@ done 3< <(jq -r '
 ' "$MCP_FILE" 2>/dev/null)
 
 printf "Installing MCP servers... "
+[ -f ~/.claude.json ] || echo '{}' > ~/.claude.json
 TEMP=$(mktemp)
 jq --argjson servers "$(echo "$MCP_JSON" | jq '.mcpServers')" \
     '.mcpServers = $servers' ~/.claude.json > "$TEMP" && mv "$TEMP" ~/.claude.json
