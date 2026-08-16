@@ -28,6 +28,9 @@ if ! $INSTALLED; then
         [yY])
             printf "Installing Homebrew...\n"
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+            # Make brew available in this shell; new shells get it from path.zsh
+            eval "$(/opt/homebrew/bin/brew shellenv)"
             printf "\033[32mDone\033[0m\n\n"
             ;;
         *)
