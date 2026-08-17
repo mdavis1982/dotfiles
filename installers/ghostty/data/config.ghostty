@@ -1,4 +1,5 @@
 theme = Catppuccin Mocha
+minimum-contrast = 2
 
 font-family = "JetBrains Mono"
 font-size = 15
