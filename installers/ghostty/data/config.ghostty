@@ -4,13 +4,13 @@ minimum-contrast = 2
 font-family = "JetBrains Mono"
 font-size = 15
 font-thicken = true
-adjust-cell-height = 16
+adjust-cell-height = 22
 
 macos-titlebar-style = hidden
 window-padding-x = 18
 window-padding-y = 12
 window-padding-balance = true
-window-width = 180
+window-width = 185
 window-height = 36
 
 working-directory = home
