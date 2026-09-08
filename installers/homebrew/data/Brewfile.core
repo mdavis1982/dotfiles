@@ -21,8 +21,6 @@ cask 'google-chrome'
 cask 'rocket'
 cask 'slack'
 cask 'telegram'
-cask 'the-unarchiver'
-cask 'zoom'
 
 # Mac App Store
 mas 'Keynote', id: 361285480
