@@ -26,6 +26,7 @@ printf "Creating filesystem folders... "
 mkdir -p ~/Developer
 mkdir -p ~/Developer/Apps
 mkdir -p ~/Developer/Games
+mkdir -p ~/Developer/Go
 mkdir -p ~/Developer/Packages
 mkdir -p ~/Developer/Sites
 mkdir -p ~/Developer/Other
